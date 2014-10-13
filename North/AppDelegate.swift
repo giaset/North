@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        self.window!.rootViewController = MainTableViewController()
+        self.window!.rootViewController = MainTableViewController(style: .Grouped)
         
         self.window!.makeKeyAndVisible()
         
