@@ -8,20 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		687417B319EC6EE2005EF4EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687417B219EC6EE2005EF4EA /* AppDelegate.swift */; };
-		687417B519EC6EE2005EF4EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687417B419EC6EE2005EF4EA /* ViewController.swift */; };
-		687417B819EC6EE3005EF4EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687417B619EC6EE3005EF4EA /* Main.storyboard */; };
 		687417BA19EC6EE3005EF4EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687417B919EC6EE3005EF4EA /* Images.xcassets */; };
 		687417BD19EC6EE3005EF4EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 687417BB19EC6EE3005EF4EA /* LaunchScreen.xib */; };
+		68F635B119EC7DC90094C544 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F635B019EC7DC90094C544 /* MainTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		687417AD19EC6EE2005EF4EA /* North.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = North.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		687417B119EC6EE2005EF4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		687417B219EC6EE2005EF4EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		687417B419EC6EE2005EF4EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		687417B719EC6EE3005EF4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		687417B919EC6EE3005EF4EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		687417BC19EC6EE3005EF4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		68F635B019EC7DC90094C544 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				687417B219EC6EE2005EF4EA /* AppDelegate.swift */,
-				687417B419EC6EE2005EF4EA /* ViewController.swift */,
-				687417B619EC6EE3005EF4EA /* Main.storyboard */,
+				68F635B019EC7DC90094C544 /* MainTableViewController.swift */,
 				687417B919EC6EE3005EF4EA /* Images.xcassets */,
 				687417BB19EC6EE3005EF4EA /* LaunchScreen.xib */,
 				687417B019EC6EE2005EF4EA /* Supporting Files */,
@@ -129,7 +126,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				687417B819EC6EE3005EF4EA /* Main.storyboard in Resources */,
 				687417BD19EC6EE3005EF4EA /* LaunchScreen.xib in Resources */,
 				687417BA19EC6EE3005EF4EA /* Images.xcassets in Resources */,
 			);
@@ -142,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				687417B519EC6EE2005EF4EA /* ViewController.swift in Sources */,
+				68F635B119EC7DC90094C544 /* MainTableViewController.swift in Sources */,
 				687417B319EC6EE2005EF4EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,14 +146,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		687417B619EC6EE3005EF4EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				687417B719EC6EE3005EF4EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		687417BB19EC6EE3005EF4EA /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,6 +273,7 @@
 				687417CE19EC6EE3005EF4EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
