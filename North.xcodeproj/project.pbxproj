@@ -12,18 +12,7 @@
 		687417B819EC6EE3005EF4EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687417B619EC6EE3005EF4EA /* Main.storyboard */; };
 		687417BA19EC6EE3005EF4EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687417B919EC6EE3005EF4EA /* Images.xcassets */; };
 		687417BD19EC6EE3005EF4EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 687417BB19EC6EE3005EF4EA /* LaunchScreen.xib */; };
-		687417C919EC6EE3005EF4EA /* NorthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687417C819EC6EE3005EF4EA /* NorthTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		687417C319EC6EE3005EF4EA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 687417A519EC6EE2005EF4EA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 687417AC19EC6EE2005EF4EA;
-			remoteInfo = North;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		687417AD19EC6EE2005EF4EA /* North.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = North.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,20 +22,10 @@
 		687417B719EC6EE3005EF4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		687417B919EC6EE3005EF4EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		687417BC19EC6EE3005EF4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		687417C219EC6EE3005EF4EA /* NorthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		687417C719EC6EE3005EF4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		687417C819EC6EE3005EF4EA /* NorthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		687417AA19EC6EE2005EF4EA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		687417BF19EC6EE3005EF4EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,7 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				687417AF19EC6EE2005EF4EA /* North */,
-				687417C519EC6EE3005EF4EA /* NorthTests */,
 				687417AE19EC6EE2005EF4EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				687417AD19EC6EE2005EF4EA /* North.app */,
-				687417C219EC6EE3005EF4EA /* NorthTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,23 +72,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		687417C519EC6EE3005EF4EA /* NorthTests */ = {
-			isa = PBXGroup;
-			children = (
-				687417C819EC6EE3005EF4EA /* NorthTests.swift */,
-				687417C619EC6EE3005EF4EA /* Supporting Files */,
-			);
-			path = NorthTests;
-			sourceTree = "<group>";
-		};
-		687417C619EC6EE3005EF4EA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				687417C719EC6EE3005EF4EA /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,24 +92,6 @@
 			productReference = 687417AD19EC6EE2005EF4EA /* North.app */;
 			productType = "com.apple.product-type.application";
 		};
-		687417C119EC6EE3005EF4EA /* NorthTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 687417CF19EC6EE3005EF4EA /* Build configuration list for PBXNativeTarget "NorthTests" */;
-			buildPhases = (
-				687417BE19EC6EE3005EF4EA /* Sources */,
-				687417BF19EC6EE3005EF4EA /* Frameworks */,
-				687417C019EC6EE3005EF4EA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				687417C419EC6EE3005EF4EA /* PBXTargetDependency */,
-			);
-			name = NorthTests;
-			productName = NorthTests;
-			productReference = 687417C219EC6EE3005EF4EA /* NorthTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +103,6 @@
 				TargetAttributes = {
 					687417AC19EC6EE2005EF4EA = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					687417C119EC6EE3005EF4EA = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 687417AC19EC6EE2005EF4EA;
 					};
 				};
 			};
@@ -182,7 +120,6 @@
 			projectRoot = "";
 			targets = (
 				687417AC19EC6EE2005EF4EA /* North */,
-				687417C119EC6EE3005EF4EA /* NorthTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,13 +135,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		687417C019EC6EE3005EF4EA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -217,23 +147,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		687417BE19EC6EE3005EF4EA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				687417C919EC6EE3005EF4EA /* NorthTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		687417C419EC6EE3005EF4EA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 687417AC19EC6EE2005EF4EA /* North */;
-			targetProxy = 687417C319EC6EE3005EF4EA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		687417B619EC6EE3005EF4EA /* Main.storyboard */ = {
@@ -352,40 +266,6 @@
 			};
 			name = Release;
 		};
-		687417D019EC6EE3005EF4EA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = NorthTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/North.app/North";
-			};
-			name = Debug;
-		};
-		687417D119EC6EE3005EF4EA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = NorthTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/North.app/North";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -403,14 +283,6 @@
 			buildConfigurations = (
 				687417CD19EC6EE3005EF4EA /* Debug */,
 				687417CE19EC6EE3005EF4EA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		687417CF19EC6EE3005EF4EA /* Build configuration list for PBXNativeTarget "NorthTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				687417D019EC6EE3005EF4EA /* Debug */,
-				687417D119EC6EE3005EF4EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
