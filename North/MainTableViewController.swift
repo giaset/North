@@ -12,10 +12,16 @@ class MainTableViewController: UITableViewController {
     
     let cellIdentifier = "cellIdentifier"
     
+    var cloud: Firebase!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        
+        // Set up Firebase
+        cloud = Firebase(url: "https://northsouth.firebaseio.com/devices/"+UIDevice.currentDevice().identifierForVendor.UUIDString)
+        cloud.childByAppendingPath("Gianni").setValue(1)
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
