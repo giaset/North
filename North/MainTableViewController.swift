@@ -21,6 +21,13 @@ class MainTableViewController: UITableViewController {
         
         // Set up Firebase
         cloud = Firebase(url: "https://northsouth.firebaseio.com/devices/"+UIDevice.currentDevice().identifierForVendor.UUIDString)
+        
+        cloud.observeEventType(FEventType.ChildAdded, withBlock: {
+            (snap: FDataSnapshot!) -> Void in
+            // ToDo: get all at once, ordered by score
+            println(snap.name)
+            println(snap.value)
+        })
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
