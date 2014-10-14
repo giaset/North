@@ -21,7 +21,6 @@ class MainTableViewController: UITableViewController {
         
         // Set up Firebase
         cloud = Firebase(url: "https://northsouth.firebaseio.com/devices/"+UIDevice.currentDevice().identifierForVendor.UUIDString)
-        cloud.childByAppendingPath("Gianni").setValue(1)
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
